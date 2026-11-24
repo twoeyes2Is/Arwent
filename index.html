@@ -84,9 +84,9 @@
     .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 40px; }
     .section-heading h2 { margin-bottom: 0; }
     .section-heading p { max-width: 440px; margin: 0; color: var(--grey); }
-    .work-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
-    .work-photo { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: var(--soft); }
-    .work-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+    .work-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 30px; }
+    .work-photo { position: relative; width: 100%; overflow: hidden; background: var(--soft); }
+    .work-photo img { width: 100%; height: auto; object-fit: contain; transition: transform .5s ease; }
     .work-card:hover img { transform: scale(1.04); }
     .work-card h3 { margin: 18px 0 8px; font-size: 25px; font-weight: 600; }
     .work-card p { margin: 0; color: #65727b; font-size: 15px; }
@@ -146,7 +146,6 @@
       .statement { padding: 70px 0; }
       .section-heading { align-items: flex-start; flex-direction: column; }
       .work-grid { grid-template-columns: 1fr; gap: 38px; }
-      .work-photo { aspect-ratio: 4 / 3; }
       .purpose { padding: 70px 0; }
       .purpose-grid, .contact-grid { grid-template-columns: 1fr; gap: 35px; }
       .purpose-list { grid-template-columns: 1fr; gap: 25px; }
@@ -225,12 +224,12 @@
       </div>
       <div class="work-grid">
         <article class="work-card">
-          <div class="work-photo"><img src="images/show-1.jpg" alt="It Her-ppened To Me production"></div>
+          <div class="work-photo"><img src="images/show-1.jpg" width="544" height="1280" alt="It Her-ppened To Me production"></div>
           <h3>It Her-ppened To Me</h3>
           <p>A powerful contemporary dance production exploring the harrowing experience of gender-based violence. The narrative follows Lerato, a young person whose loving relationship rapidly descends into a cycle of control and abuse by a partner.</p>
         </article>
         <article class="work-card">
-          <div class="work-photo"><img src="images/show-2.jpg" alt="iNkcubeko production"></div>
+          <div class="work-photo"><img src="images/show-2.jpg" width="848" height="1264" alt="iNkcubeko production"></div>
           <h3>iNkcubeko</h3>
           <p>A theatre-dance production highlighting a protagonist’s journey through cultural identity and heritage. Traditional African music and Afro-contemporary dance create a deeply personal exploration of identity, recognition and embracing who we are.</p>
         </article>
