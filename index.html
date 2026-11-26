@@ -5,6 +5,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="Around The World Entertainments is an Afro-contemporary dance company creating African performance, theatre, workshops and cultural storytelling." name="description"/>
   <meta content="#063b5e" name="theme-color"/>
+  <link rel="icon" type="image/png" href="images/logo.png"/>
+  <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+  <link rel="apple-touch-icon" href="images/logo.png"/>
   <title>
    Around The World Entertainments | Afro-Contemporary Dance Company
   </title>
@@ -661,6 +664,56 @@ footer h3 {
   border:1px solid #f1aeb5
 }
 
+@media(min-width:761px) {
+  .work {
+    padding:50px 0
+  }
+
+  .work .section-heading {
+    margin-bottom:24px
+  }
+
+  .work .section-heading h2 {
+    font-size:clamp(38px,4vw,52px)
+  }
+
+  .work-grid {
+    grid-template-columns:repeat(2,minmax(260px,340px));
+    justify-content:center;
+    align-items:start;
+    gap:clamp(36px,6vw,80px)
+  }
+
+  .work-photo {
+    width:100%;
+    max-width:320px;
+    height:430px;
+    margin-inline:auto;
+    aspect-ratio:auto;
+    background:transparent
+  }
+
+  .work-photo img {
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:430px;
+    margin-inline:auto;
+    object-fit:contain;
+    object-position:center
+  }
+
+  .work-card h3 {
+    margin:14px 0 6px;
+    font-size:23px
+  }
+
+  .work-card p {
+    font-size:14px;
+    line-height:1.45
+  }
+}
+
 @media(max-width:760px) {
   .container {
     width:min(100% - 32px,var(--max))
@@ -777,11 +830,32 @@ footer h3 {
     grid-template-columns:1fr;
     gap:38px
   }
+  .work-grid {
+    justify-items:center
+  }
+  .work-card {
+    width:100%;
+    max-width:320px
+  }
   .work-photo {
-    aspect-ratio:7/12
+    width:100%;
+    max-width:280px;
+    height:400px;
+    margin-inline:auto;
+    aspect-ratio:auto;
+    background:transparent
+  }
+  .work-photo img {
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:400px;
+    margin-inline:auto;
+    object-fit:contain;
+    object-position:center
   }
   .work-card:hover img {
-    transform:scale(1.03)
+    transform:none
   }
   .purpose {
     padding:70px 0
@@ -1045,7 +1119,7 @@ footer h3 {
     <div class="work-grid">
      <article class="work-card">
       <div class="work-photo">
-       <img alt="It Her-ppened To Me production" decoding="async" height="1280" loading="lazy" src="images/show-1.jpg" width="544"/>
+       <img alt="It Her-ppened To Me production" decoding="async" loading="lazy" src="images/show-1.jpg"/ width="183" height="430">
       </div>
       <h3>
        It Her-ppened To Me
@@ -1056,7 +1130,7 @@ footer h3 {
      </article>
      <article class="work-card">
       <div class="work-photo">
-       <img alt="iNkcubeko production" decoding="async" height="1264" loading="lazy" src="images/show-2.jpg" width="848"/>
+       <img alt="iNkcubeko production" decoding="async" loading="lazy" src="images/show-2.jpg"/ width="288" height="430">
       </div>
       <h3>
        iNkcubeko
